@@ -1,9 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/methods/BeforeAndAfter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/pages/SignUpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/tests/homepage/LoadHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/negative/SignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/CsvReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/invalid-email.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/real-email.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitest/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/SignUpPage.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ggGp2zWFk0MRH2k9K5ATU2tqsY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.LoadHomePage.clickSignUpButton.executor": "Run",
+    "TestNG.SignUp.clickSignUp.executor": "Run",
+    "TestNG.SignUp.invalidEmail.executor": "Run",
+    "TestNG.SignUp.signUpWrongEmail (1).executor": "Run",
+    "TestNG.SignUp.signUpWrongEmail.executor": "Run",
+    "TestNG.SignUp.signUpWrongPassword.executor": "Run",
+    "TestNG.SignUp.startRegistration.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/marto/IdeaProjects/FinalP_MM_GitHub/src/test/resources"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SignUp.invalidEmail">
+    <configuration name="LoadHomePage.clickSignUpButton" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FP_MM_GitHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitest.tests.homepage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitest.tests.homepage" />
+      <option name="MAIN_CLASS_NAME" value="uitest.tests.homepage.LoadHomePage" />
+      <option name="METHOD_NAME" value="clickSignUpButton" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUp.invalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FP_MM_GitHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitest.tests.signuppage.negative.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitest.tests.signuppage.negative" />
+      <option name="MAIN_CLASS_NAME" value="uitest.tests.signuppage.negative.SignUp" />
+      <option name="METHOD_NAME" value="invalidEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUp.signUpWrongEmail (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FP_MM_GitHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitest.tests.negative.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitest.tests.negative" />
+      <option name="MAIN_CLASS_NAME" value="uitest.tests.negative.SignUp" />
+      <option name="METHOD_NAME" value="signUpWrongEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUp.signUpWrongEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FP_MM_GitHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.negative.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.negative" />
+      <option name="MAIN_CLASS_NAME" value="tests.negative.SignUp" />
+      <option name="METHOD_NAME" value="signUpWrongEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUp.startRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FP_MM_GitHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitest.tests.negative.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitest.tests.negative" />
+      <option name="MAIN_CLASS_NAME" value="uitest.tests.negative.SignUp" />
+      <option name="METHOD_NAME" value="startRegistration" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.SignUp.invalidEmail" />
+        <item itemvalue="TestNG.LoadHomePage.clickSignUpButton" />
+        <item itemvalue="TestNG.SignUp.startRegistration" />
+        <item itemvalue="TestNG.SignUp.signUpWrongEmail (1)" />
+        <item itemvalue="TestNG.SignUp.signUpWrongEmail" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="" />
+      <created>1716111989119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716111989119</updated>
+    </task>
+    <servers />
   </component>
 </project>
