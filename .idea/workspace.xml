@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/methods/BeforeAndAfter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/pages/SignUpPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/tests/homepage/LoadHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/negative/SignUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/CsvReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/invalid-email.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/real-email.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitest/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/SignUpPage.java" beforeDir="false" />
-    </list>
+    <list default="true" id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="successful first tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,6 +169,19 @@
       <option name="presentableId" value="Default" />
       <updated>1716111989119</updated>
     </task>
+    <task id="LOCAL-00001" summary="successful first tests">
+      <option name="closed" value="true" />
+      <created>1716321026941</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716321026941</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="successful first tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="successful first tests" />
   </component>
 </project>
