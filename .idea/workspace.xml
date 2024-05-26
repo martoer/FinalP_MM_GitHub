@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="successful first tests" />
+    <list default="true" id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="successful first tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/happypath/HappyPathSignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/negative/EmailSignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/negative/PasswordSignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/negative/UsernameSignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/happy-path.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/valid-password.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/valid-username.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/wrong-password.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/wrong-username.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitest/pages/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/negative/SignUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/real-email.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/real-email.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,17 +48,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.FP_MM_GitHub [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.LoadHomePage.clickSignUpButton.executor": "Run",
     "TestNG.SignUp.clickSignUp.executor": "Run",
+    "TestNG.SignUp.executor": "Run",
     "TestNG.SignUp.invalidEmail.executor": "Run",
+    "TestNG.SignUp.shortPassword.executor": "Run",
     "TestNG.SignUp.signUpWrongEmail (1).executor": "Run",
     "TestNG.SignUp.signUpWrongEmail.executor": "Run",
     "TestNG.SignUp.signUpWrongPassword.executor": "Run",
     "TestNG.SignUp.startRegistration.executor": "Run",
+    "TestNG.SignUp.validEmail.executor": "Run",
+    "TestNG.SignUp.validPassword.executor": "Run",
+    "TestNG.SignUp.validSignUp.executor": "Run",
+    "TestNG.SignUp.wrongPassword.executor": "Run",
+    "TestNG.SignUp.wrongUsername.executor": "Run",
+    "TestNG.UsernameSignUp.validUsername.executor": "Run",
+    "TestNG.UsernameSignUp.wrongUsername.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/marto/IdeaProjects/FinalP_MM_GitHub/src/test/resources"
+    "last_opened_file_path": "/Users/marto/IdeaProjects/FinalP_MM_GitHub",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -51,27 +77,23 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.SignUp.invalidEmail">
-    <configuration name="LoadHomePage.clickSignUpButton" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FP_MM_GitHub" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uitest.tests.homepage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uitest.tests.homepage" />
-      <option name="MAIN_CLASS_NAME" value="uitest.tests.homepage.LoadHomePage" />
-      <option name="METHOD_NAME" value="clickSignUpButton" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUp.invalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+    </option>
+  </component>
+  <component name="RunAnythingContextRecentDirectoryCache">
+    <option name="paths">
+      <recentPaths value="$PROJECT_DIR$" />
+      <recentPaths value="$PROJECT_DIR$" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.UsernameSignUp.wrongUsername">
+    <configuration name="EmailSignUp.validPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FP_MM_GitHub" />
       <extension name="coverage">
         <pattern>
@@ -80,8 +102,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uitest.tests.signuppage.negative" />
-      <option name="MAIN_CLASS_NAME" value="uitest.tests.signuppage.negative.SignUp" />
-      <option name="METHOD_NAME" value="invalidEmail" />
+      <option name="MAIN_CLASS_NAME" value="uitest.tests.signuppage.negative.EmailSignUp" />
+      <option name="METHOD_NAME" value="validPassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -89,17 +111,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUp.signUpWrongEmail (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EmailSignUp.wrongPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FP_MM_GitHub" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uitest.tests.negative.*" />
+          <option name="PATTERN" value="uitest.tests.signuppage.negative.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uitest.tests.negative" />
-      <option name="MAIN_CLASS_NAME" value="uitest.tests.negative.SignUp" />
-      <option name="METHOD_NAME" value="signUpWrongEmail" />
+      <option name="PACKAGE_NAME" value="uitest.tests.signuppage.negative" />
+      <option name="MAIN_CLASS_NAME" value="uitest.tests.signuppage.negative.EmailSignUp" />
+      <option name="METHOD_NAME" value="wrongPassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -107,17 +129,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUp.signUpWrongEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EmailSignUp.wrongUsername" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FP_MM_GitHub" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.negative.*" />
+          <option name="PATTERN" value="uitest.tests.signuppage.negative.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.negative" />
-      <option name="MAIN_CLASS_NAME" value="tests.negative.SignUp" />
-      <option name="METHOD_NAME" value="signUpWrongEmail" />
+      <option name="PACKAGE_NAME" value="uitest.tests.signuppage.negative" />
+      <option name="MAIN_CLASS_NAME" value="uitest.tests.signuppage.negative.EmailSignUp" />
+      <option name="METHOD_NAME" value="wrongUsername" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -125,17 +147,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUp.startRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UsernameSignUp.validUsername" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FP_MM_GitHub" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uitest.tests.negative.*" />
+          <option name="PATTERN" value="uitest.tests.signuppage.negative.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uitest.tests.negative" />
-      <option name="MAIN_CLASS_NAME" value="uitest.tests.negative.SignUp" />
-      <option name="METHOD_NAME" value="startRegistration" />
+      <option name="PACKAGE_NAME" value="uitest.tests.signuppage.negative" />
+      <option name="MAIN_CLASS_NAME" value="uitest.tests.signuppage.negative.UsernameSignUp" />
+      <option name="METHOD_NAME" value="validUsername" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsernameSignUp.wrongUsername" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FP_MM_GitHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitest.tests.signuppage.negative.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitest.tests.signuppage.negative" />
+      <option name="MAIN_CLASS_NAME" value="uitest.tests.signuppage.negative.UsernameSignUp" />
+      <option name="METHOD_NAME" value="wrongUsername" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -145,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SignUp.invalidEmail" />
-        <item itemvalue="TestNG.LoadHomePage.clickSignUpButton" />
-        <item itemvalue="TestNG.SignUp.startRegistration" />
-        <item itemvalue="TestNG.SignUp.signUpWrongEmail (1)" />
-        <item itemvalue="TestNG.SignUp.signUpWrongEmail" />
+        <item itemvalue="TestNG.UsernameSignUp.wrongUsername" />
+        <item itemvalue="TestNG.UsernameSignUp.validUsername" />
+        <item itemvalue="TestNG.EmailSignUp.validPassword" />
+        <item itemvalue="TestNG.EmailSignUp.wrongUsername" />
+        <item itemvalue="TestNG.EmailSignUp.wrongPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716321026941</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="successful first tests">
+      <option name="closed" value="true" />
+      <created>1716321210654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716321210654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
