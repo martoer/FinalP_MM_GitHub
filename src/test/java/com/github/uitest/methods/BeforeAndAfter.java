@@ -1,8 +1,9 @@
-package uitest.methods;
+package com.github.uitest.methods;
 
 
 import driver.DriverFactory;
 import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -27,6 +28,7 @@ public class BeforeAndAfter {
     private int implicitWait;
     private String browser;
 
+    @Step("Set Up Browser")
     private void setUpBrowserDriver() {
         try (FileInputStream configFile = new FileInputStream("src/test/resources/config.properties")) {
             Properties config = new Properties();
@@ -53,6 +55,7 @@ public class BeforeAndAfter {
         }
     }
 
+    @Step("")
     private void loadUrl() {
         WebDriver driver = DriverFactory.getDriver();
         driver.get(url);
@@ -69,13 +72,13 @@ public class BeforeAndAfter {
     }
 
     @BeforeMethod
-    public void beforeSetup () {
+    public void beforeSetup() {
         setUpBrowserDriver();
         loadUrl();
     }
 
     @AfterMethod
-    public void tearDown (ITestResult result){
+    public void tearDown(ITestResult result) {
         WebDriver driver = DriverFactory.getDriver();
         if (ITestResult.FAILURE == result.getStatus()) {
             TakesScreenshot screenshot = (TakesScreenshot) driver;

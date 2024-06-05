@@ -1,12 +1,13 @@
-package uitest.tests.signuppage.negative;
+package com.github.uitest.tests.signuppage.negative;
 
+import com.github.uitest.pages.HomePage;
+import com.github.uitest.pages.SignUpPage;
 import com.opencsv.exceptions.CsvException;
+import io.qameta.allure.*;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import uitest.methods.BeforeAndAfter;
-import uitest.pages.HomePage;
-import uitest.pages.SignUpPage;
+import com.github.uitest.methods.BeforeAndAfter;
 import utils.CsvReader;
 
 import java.io.IOException;
@@ -30,6 +31,10 @@ public class PasswordSignUp extends BeforeAndAfter {
         return CsvReader.readFile("src/test/resources/valid-password.csv");
     }
 
+    @Epic("New User Sign Up")
+    @Feature("Enter Password For Sign Up")
+    @Story("Enter Wrong Password")
+    @Severity(SeverityLevel.NORMAL)
     @Test(dataProvider = "wrong-password")               //ИМАМ ЗА ПОПРАВКА
     public void wrongPassword(String email, String password, String errorMessagePassword) {
         soft = new SoftAssert();
@@ -53,6 +58,10 @@ public class PasswordSignUp extends BeforeAndAfter {
 
     }
 
+    @Epic("New User Sign Up")
+    @Feature("Enter Password For Sign Up")
+    @Story("Enter Valid Password")
+    @Severity(SeverityLevel.NORMAL)
     @Test(dataProvider = "valid-password")               //ИМАМ ЗА ПОПРАВКА
     public void validPassword(String email, String password, String errorMessagePassword) {
         soft = new SoftAssert();

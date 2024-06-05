@@ -1,6 +1,7 @@
-package uitest.pages;
+package com.github.uitest.pages;
 
 import driver.DriverFactory;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -20,14 +21,17 @@ public class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    @Step("Wait for certain element to be visible")
     public void waitForElementToBeVisible(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public void waitFOrElementsToBeClickable (WebElement element) {
+    @Step("Wait for certain element to be clickable")
+    public void waitFOrElementsToBeClickable(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
+    @Step("Wait for certain element to be invisible")
     public void waitForElementToBeStale(WebElement element) {
         wait.until(ExpectedConditions.stalenessOf(element));
     }
