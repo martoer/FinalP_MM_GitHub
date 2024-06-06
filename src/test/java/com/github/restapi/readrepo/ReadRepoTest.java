@@ -1,16 +1,16 @@
 package com.github.restapi.readrepo;
 
+import com.github.restapi.baseapi.BaseApi;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import restassured.RepoFactory;
 import org.testng.Assert;
 
-public class ReadRepoTest {
+public class ReadRepoTest extends BaseApi {
 
-    static final String BASE_EP = "https://api.github.com/user/repos";
-    static final String TOKEN = "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";
-    static final String BASE_URI = "https://api.github.com";
+    static final String BASE_EP = "/repos/qamartinautomation/";
+
     @Test(description = "Confirm repository is created", priority = 2)
     void verifyRepoIsCreated() {
         var repoName = new RepoFactory("demorepo");
@@ -18,10 +18,8 @@ public class ReadRepoTest {
 
         Response response = RestAssured
                 .given()
-                .auth()
-                .oauth2(TOKEN)
                 .when()
-                .get( BASE_URI + "/repos/qamartinautomation/" + repoNameToBeConfirmed)
+                .get(BASE_EP + repoNameToBeConfirmed)
                 .then()
                 .statusCode(200)
                 .extract()
@@ -38,10 +36,8 @@ public class ReadRepoTest {
 
         Response response = RestAssured
                 .given()
-                .auth()
-                .oauth2(TOKEN)
                 .when()
-                .get( BASE_URI + "/repos/qamartinautomation/" + repoUpdatedNameToBeConfirmed)
+                .get(BASE_EP + repoUpdatedNameToBeConfirmed)
                 .then()
                 .statusCode(200)
                 .extract()

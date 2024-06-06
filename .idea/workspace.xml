@@ -4,27 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="successful sign up">
-      <change afterPath="$PROJECT_DIR$/src/main/java/restassured/RepoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/createrepo/CreateRepoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/deleterepo/DeleteRepoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/methods/BeforeAndAfterApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/readrepo/ReadRepoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/updaterepo/UpdateRepoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/pages/VerifyPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/tests/signuppage/negative/OptInSignUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/tests/verifypage/CaptchaVerify.java" afterDir="false" />
+    <list default="true" id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="frateli commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/baseapi/BaseApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/methods/BeforeAndAfter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/methods/BeforeAndAfter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/pages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/tests/homepage/LoadHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/tests/homepage/LoadHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/happypath/HappyPathSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/tests/signuppage/happypath/HappyPathSignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/negative/EmailSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/tests/signuppage/negative/EmailSignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/negative/PasswordSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/tests/signuppage/negative/PasswordSignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/tests/signuppage/negative/UsernameSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uitest/tests/signuppage/negative/UsernameSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/createrepo/CreateRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/createrepo/CreateRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/deleterepo/DeleteRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/deleterepo/DeleteRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/methods/BeforeAndAfterApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/readrepo/ReadRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/readrepo/ReadRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/updaterepo/UpdateRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/updaterepo/UpdateRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +54,8 @@
     "TestNG.OptInSignUp.optInBoxNotChecked.executor": "Run",
     "TestNG.OptInSignUp.validSignUp.executor": "Run",
     "TestNG.ReadRepoTest.getRepoTest.executor": "Run",
+    "TestNG.ReadRepoTest.verifyRepoIsCreated.executor": "Run",
+    "TestNG.ReadRepoTest.verifyRepoIsUpdated.executor": "Run",
     "TestNG.SignUp.clickSignUp.executor": "Run",
     "TestNG.SignUp.executor": "Run",
     "TestNG.SignUp.invalidEmail.executor": "Run",
@@ -106,7 +97,7 @@
       <recentPaths value="$PROJECT_DIR$" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.HappyPathSignUp.validSignUp">
+  <component name="RunManager" selected="TestNG.DeleteRepoTest.testPatchRequest">
     <configuration name="CreateRepoTest.testPostRequest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FP_MM_GitHub" />
       <extension name="coverage">
@@ -143,25 +134,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HappyPathSignUp.validSignUp" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FP_MM_GitHub" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.uitest.tests.signuppage.happypath.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.uitest.tests.signuppage.happypath" />
-      <option name="MAIN_CLASS_NAME" value="com.github.uitest.tests.signuppage.happypath.HappyPathSignUp" />
-      <option name="METHOD_NAME" value="validSignUp" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadRepoTest.getRepoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadRepoTest.verifyRepoIsCreated" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FP_MM_GitHub" />
       <extension name="coverage">
         <pattern>
@@ -171,7 +144,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.github.restapi.readrepo" />
       <option name="MAIN_CLASS_NAME" value="com.github.restapi.readrepo.ReadRepoTest" />
-      <option name="METHOD_NAME" value="getRepoTest" />
+      <option name="METHOD_NAME" value="verifyRepoIsCreated" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadRepoTest.verifyRepoIsUpdated" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FP_MM_GitHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.restapi.readrepo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.restapi.readrepo" />
+      <option name="MAIN_CLASS_NAME" value="com.github.restapi.readrepo.ReadRepoTest" />
+      <option name="METHOD_NAME" value="verifyRepoIsUpdated" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -199,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HappyPathSignUp.validSignUp" />
         <item itemvalue="TestNG.DeleteRepoTest.testPatchRequest" />
-        <item itemvalue="TestNG.ReadRepoTest.getRepoTest" />
-        <item itemvalue="TestNG.CreateRepoTest.testPostRequest" />
         <item itemvalue="TestNG.UpdateRepoTest.testPatchRequest" />
+        <item itemvalue="TestNG.CreateRepoTest.testPostRequest" />
+        <item itemvalue="TestNG.ReadRepoTest.verifyRepoIsUpdated" />
+        <item itemvalue="TestNG.ReadRepoTest.verifyRepoIsCreated" />
       </list>
     </recent_temporary>
   </component>
@@ -247,12 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1716713168184</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="frateli commit">
+      <option name="closed" value="true" />
+      <created>1717600524668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717600524669</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="successful first tests" />
     <MESSAGE value="successful sign up" />
-    <option name="LAST_COMMIT_MESSAGE" value="successful sign up" />
+    <MESSAGE value="frateli commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="frateli commit" />
   </component>
 </project>

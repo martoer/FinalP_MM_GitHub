@@ -4,7 +4,8 @@
 <suite name="Test Demo Suite" parallel="classes" thread-count="4">
     <test name="Selenium Course Suite tests">
         <packages>
-            <package name="uitest.tests.*"/>
+            <package name="com.github.uitest.tests."/>
+            <package name="com.github.restapi."/>
         </packages>
     </test>
     <listeners>
