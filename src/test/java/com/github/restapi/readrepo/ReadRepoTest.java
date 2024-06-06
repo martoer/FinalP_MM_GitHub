@@ -11,7 +11,7 @@ public class ReadRepoTest extends BaseApi {
 
     static final String BASE_EP = "/repos/qamartinautomation/";
 
-    @Test(description = "Confirm repository is created", priority = 2)
+    @Test(description = "Confirm repository is created", priority = 3)
     void verifyRepoIsCreated() {
         var repoName = new RepoFactory("demorepo");
         String repoNameToBeConfirmed = repoName.getRepoName();
@@ -29,7 +29,7 @@ public class ReadRepoTest extends BaseApi {
                 "There is no repository with such name");
     }
 
-    @Test(description = "Confirm repository is updated", priority = 4)
+    @Test(description = "Confirm repository is updated", priority = 5)
     void verifyRepoIsUpdated() {
         var repoName = new RepoFactory("demorepo-updated");
         String repoUpdatedNameToBeConfirmed = repoName.getRepoName();

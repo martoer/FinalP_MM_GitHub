@@ -11,7 +11,7 @@ public class UpdateRepoTest  extends BaseApi {
     static final String BASE_EP = "/repos/qamartinautomation/demorepo";
 
 
-    @Test(description = "Update Repository Name", priority = 3)
+    @Test(description = "Update Repository Name", priority = 4)
     void testPatchRequest() {
         RestAssured
                 .given()

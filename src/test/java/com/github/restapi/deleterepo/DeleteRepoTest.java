@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class DeleteRepoTest extends BaseApi {
 
     static final String BASE_EP = "repos/qamartinautomation/demorepo-updated";
-    @Test(description = "Delete Repository", priority = 5)
+    @Test(description = "Delete Repository", priority = 6)
     void testPatchRequest() {
         RestAssured
                 .given()

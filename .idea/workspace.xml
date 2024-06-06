@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="frateli commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/baseapi/BaseApi.java" afterDir="false" />
+    <list default="true" id="4580b71f-8ed7-44cc-ac2d-0be4bdc24ddd" name="Changes" comment="final commit ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/baseapi/BaseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/baseapi/BaseApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/createrepo/CreateRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/createrepo/CreateRepoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/deleterepo/DeleteRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/deleterepo/DeleteRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/methods/BeforeAndAfterApi.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/readrepo/ReadRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/readrepo/ReadRepoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/github/restapi/updaterepo/UpdateRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/restapi/updaterepo/UpdateRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.CaptchaVerify.validSignUp.executor": "Run",
+    "TestNG.CreateRepoTest.checkAndDeleteIfRepoExists.executor": "Run",
     "TestNG.CreateRepoTest.testPostRequest.executor": "Run",
     "TestNG.DeleteRepoTest.testPatchRequest.executor": "Run",
     "TestNG.HappyPathSignUp.validSignUp.executor": "Run",
@@ -97,7 +95,25 @@
       <recentPaths value="$PROJECT_DIR$" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteRepoTest.testPatchRequest">
+  <component name="RunManager" selected="TestNG.CreateRepoTest.checkAndDeleteIfRepoExists">
+    <configuration name="CreateRepoTest.checkAndDeleteIfRepoExists" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FP_MM_GitHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.restapi.createrepo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.restapi.createrepo" />
+      <option name="MAIN_CLASS_NAME" value="com.github.restapi.createrepo.CreateRepoTest" />
+      <option name="METHOD_NAME" value="checkAndDeleteIfRepoExists" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateRepoTest.testPostRequest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FP_MM_GitHub" />
       <extension name="coverage">
@@ -127,24 +143,6 @@
       <option name="PACKAGE_NAME" value="com.github.restapi.deleterepo" />
       <option name="MAIN_CLASS_NAME" value="com.github.restapi.deleterepo.DeleteRepoTest" />
       <option name="METHOD_NAME" value="testPatchRequest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadRepoTest.verifyRepoIsCreated" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FP_MM_GitHub" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.restapi.readrepo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.restapi.readrepo" />
-      <option name="MAIN_CLASS_NAME" value="com.github.restapi.readrepo.ReadRepoTest" />
-      <option name="METHOD_NAME" value="verifyRepoIsCreated" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -190,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CreateRepoTest.checkAndDeleteIfRepoExists" />
+        <item itemvalue="TestNG.CreateRepoTest.testPostRequest" />
         <item itemvalue="TestNG.DeleteRepoTest.testPatchRequest" />
         <item itemvalue="TestNG.UpdateRepoTest.testPatchRequest" />
-        <item itemvalue="TestNG.CreateRepoTest.testPostRequest" />
         <item itemvalue="TestNG.ReadRepoTest.verifyRepoIsUpdated" />
-        <item itemvalue="TestNG.ReadRepoTest.verifyRepoIsCreated" />
       </list>
     </recent_temporary>
   </component>
@@ -246,13 +244,22 @@
       <option name="project" value="LOCAL" />
       <updated>1717600524669</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="final commit ready">
+      <option name="closed" value="true" />
+      <created>1717698987272</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717698987272</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="successful first tests" />
     <MESSAGE value="successful sign up" />
     <MESSAGE value="frateli commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="frateli commit" />
+    <MESSAGE value="final commit ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="final commit ready" />
   </component>
 </project>
